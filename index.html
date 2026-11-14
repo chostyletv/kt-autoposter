@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KT Auto-Poster Policies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+<style>
+  /* Layout: single reading column, sticky section switcher, two policy documents stacked */
+  :root {
+    --bg: #f7f6fb; --surface: #ffffff; --fg: #1d1a2b; --muted: #5d5873; --line: #e3e0ee; --accent: #6a4be0;
+    --display: 'Space Grotesk', 'IBM Plex Sans', system-ui, sans-serif;
+    --body: 'IBM Plex Sans', 'IBM Plex Sans Thai', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #13111c; --surface: #1b1827; --fg: #ece9f6; --muted: #a49fbd; --line: #2d2940; --accent: #a993ff; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #13111c; --surface: #1b1827; --fg: #ece9f6; --muted: #a49fbd; --line: #2d2940; --accent: #a993ff; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--body); }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+  .wrap { max-width: 720px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header.top { display: grid; gap: 6px; margin-bottom: 20px; }
+  .app { font: 600 13px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font: 600 clamp(28px, 5vw, 38px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; }
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 0; background: var(--bg); border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+  nav a { color: var(--fg); text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; background: var(--surface); }
+  nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+  section { scroll-margin-top: 72px; margin-bottom: 48px; }
+  h2 { font: 600 24px/1.25 var(--display); margin: 0 0 4px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 24px 0 6px; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 20px; margin: 6px 0; }
+  .th { color: var(--muted); font-size: 15px; border-left: 2px solid var(--line); padding-left: 12px; margin-top: 10px; }
+  .note { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; font-size: 15px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <span class="app">KT Auto-Poster</span>
+    <h1>Terms of Service and Privacy Policy</h1>
+    <span class="meta">Effective 14 November 2026</span>
+  </header>
+
+  <nav aria-label="Sections">
+    <a href="#terms">Terms of Service</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
+  <div class="note">KT Auto-Poster is a personal tool that runs on its owner's own computer. It publishes the owner's videos to the owner's own Facebook Pages, YouTube channel and TikTok account. It is not offered to the public.</div>
+
+  <section id="terms">
+    <h2 style="margin-top:32px">Terms of Service</h2>
+    <p class="th">ข้อกำหนดการใช้งาน: แอปนี้เป็นเครื่องมือส่วนตัวของเจ้าของ ใช้โพสต์คลิปของเจ้าของเองลงบัญชีของเจ้าของเท่านั้น</p>
+
+    <h3>Who can use it</h3>
+    <p>Only the owner of the connected accounts uses KT Auto-Poster. Each account is connected by its owner through the platform's own sign-in screen, and the owner can disconnect it at any time.</p>
+
+    <h3>What it does</h3>
+    <ul>
+      <li>Uploads a video, image or text chosen by the owner, with a caption, to the platforms the owner selects.</li>
+      <li>Publishes now or at a time the owner sets.</li>
+      <li>Shows the result of each upload, with a link to the published post.</li>
+    </ul>
+
+    <h3>Your content</h3>
+    <p>The owner is responsible for everything they publish and must follow the rules of TikTok, YouTube and Facebook, including their community guidelines and terms of service. KT Auto-Poster does not create, edit or review content.</p>
+
+    <h3>Availability</h3>
+    <p>The tool is provided as is, without warranty. Platform limits, reviews or outages can stop a post from being published.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="th">นโยบายความเป็นส่วนตัว: ข้อมูลทั้งหมดเก็บอยู่ในเครื่องของเจ้าของเท่านั้น ไม่ส่งต่อหรือขายให้ใคร</p>
+
+    <h3>What we collect</h3>
+    <ul>
+      <li><strong>Account tokens</strong> from TikTok, Google and Facebook, created when the owner connects an account.</li>
+      <li><strong>Basic profile details</strong>: account name, username and ID, used to show which account is connected.</li>
+      <li><strong>Post history</strong>: captions, chosen platforms, post status and post links.</li>
+      <li><strong>Media files</strong> the owner selects for upload. Files added through the web page are deleted after the upload finishes.</li>
+    </ul>
+
+    <h3>Where it is stored</h3>
+    <p>Everything is stored only on the owner's own computer. There is no separate server or database, and no analytics or advertising tracking.</p>
+
+    <h3>How it is used</h3>
+    <p>Data is used only to upload the owner's content to the owner's own accounts and to show the results. It is never sold or shared with third parties. It is sent only to the platform the owner chose to post to.</p>
+
+    <h3>TikTok data</h3>
+    <p>With the scopes <code>user.info.basic</code>, <code>user.info.profile</code>, <code>video.upload</code> and <code>video.publish</code>, the tool reads the connected account's name and username, and uploads or publishes videos the owner selects. It does not read followers, messages or other users' data.</p>
+
+    <h3>Deleting data</h3>
+    <p>Disconnecting an account in KT Auto-Poster deletes its stored token. Access can also be removed in each platform's settings: TikTok (Settings › Security › Apps and services), Google (myaccount.google.com › Security › Third-party connections) and Facebook (Settings › Business integrations).</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this tool can be sent to the owner through the TikTok, YouTube or Facebook account that uses it.</p>
+  </section>
+</div>
+</body>
+</html>
